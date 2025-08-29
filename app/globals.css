@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #001424;
+  --ink: #e6f7ff;
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.prose :where(h1,h2,h3,h4) {
+  color: #e6f7ff;
+}
+
+a {
+  @apply text-primary hover:underline;
+}
